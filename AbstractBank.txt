@@ -1,0 +1,29 @@
+abstract class Bank{
+abstract int getRateOfInterest();
+}
+
+class SBI{
+int getRateOfInterest(){
+return 7;
+}
+}
+class ICICI extends Bank{
+int getRateOfInterest(){
+return 8;
+}
+}
+class AbstractBank{
+public static void main(String args[]){
+Bank a = new SBI();
+bank b= new ICICI();
+
+int sbiInt=a.getRateOfInterest();
+
+System.out.println(sbiInt);
+
+int iciciInt=b.getRateOfInterest();
+System.out.println(iciciInt);
+
+
+}
+}

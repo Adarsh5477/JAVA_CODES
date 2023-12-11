@@ -1,0 +1,18 @@
+class Employee{
+float salary=40000;
+}
+
+class BankProgrammer extends Employee{
+int increment=10000;
+float updatedsalary=salary+increment;
+
+publiuc static void main(String args[]){
+BankProgrammer p= new BankProgrammer();
+
+System.out.println("Salary is: ",p.salary);
+System.out.println("Incrememnt is: ",p.increment);
+System.out.println("Updated salary is: ",p.updatedsalary);
+
+}
+
+}

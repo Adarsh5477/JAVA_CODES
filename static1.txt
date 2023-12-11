@@ -1,0 +1,9 @@
+class static1{
+final int a =5;
+
+public static void main(String args[]){
+	
+a=6;
+System.out.println(a);
+}
+}

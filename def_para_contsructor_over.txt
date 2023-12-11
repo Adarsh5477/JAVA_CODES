@@ -1,0 +1,53 @@
+class orders{
+	int order_id;
+	int quantity;
+	String name;
+	float price;
+	float discount;
+	float Total=0;
+	orders(){
+	System.out.println("No data provided can not execute the order");
+}
+	orders(int order_id,int quantity,String name,float price){
+		this.order_id=order_id;
+		this.quantity=quantity;
+		this.name=name;
+		this.price=price;
+		this.total=quantity*price;
+		
+}
+orders(int order_id,int quantity,String name,float price,float discount){
+		this.order_id=order_id;
+		this.quantity=quantity;
+		this.name=name;
+		this.price=price;
+		this.total=(quantity*price)-((discount/100)*(quantity*price));
+		
+}
+
+void execute_order(){
+	if(total){
+System.out.println("Order name"+name+" with order id"+order_id+" has a total price of"+Total+" after discounts");
+System.out.println("Order exexuted successfully");
+}
+else{
+System.out.println("order execution failed");
+}
+}
+
+}
+
+
+class def_para_constructor_over{
+	public static void main(String args[]){
+
+	orders o1= new orders();
+	orders o2= new orders(1100011,50,"order1",49.99);
+	orders o3= new orders(1100022,30,"order2",99.99,10);
+
+	o1.execute_order();
+	o2.execute_order();
+	o3.execute_order();
+}
+
+}

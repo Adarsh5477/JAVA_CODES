@@ -1,0 +1,24 @@
+abstract class store{
+	abstract void order1();
+	abstract void order2();
+}
+
+class order_details{
+void order1(){
+System.out.println("order1");
+
+}
+void order2(){
+System.out.println("order2");
+}
+}
+
+//driver
+
+class ABSTRACT_DOM{
+	public static void main(String args[]){
+		order_details ord= new order_details();
+		ord.order1();
+		ord.order2();
+}
+}
