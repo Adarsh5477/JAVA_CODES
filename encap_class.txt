@@ -1,0 +1,20 @@
+class doc{
+	doc(){
+	System.out.println("doc is called");
+}
+}
+
+class nurse{
+nurse(){
+	System.out.println("doc is called");
+}
+}
+
+class encap_class{
+
+	public static void main(String args[]){
+
+		doc d1= new doc();
+		nurse n1=new nurse();
+}
+}
