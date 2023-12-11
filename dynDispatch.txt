@@ -1,0 +1,35 @@
+class shop1{
+public vois shopDetails(){
+	System.out.println("shop1");
+}
+}
+class shop2 extends shop1{
+public vois shopDetails(){
+	System.out.println("shop2");
+}
+}
+class shop3 extends shop2{
+public vois shopDetails(){
+	System.out.println("shop3");
+}
+}
+
+class dynDispatch{
+public satic void main(String args[]){
+shop1 obj1=new shop1();
+shop1 obj2=new shop2();
+shop1 obj3=new shop3();
+
+shop1 dispatch1;
+
+dispatch1=obj1;
+dispatch1.shopDetails();
+
+dispatch1=obj2;
+dispatch1.shopDetails();
+
+dispatch1=obj3;
+dispatch1.shopDetails();
+
+}
+}
