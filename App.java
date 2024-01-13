@@ -14,7 +14,7 @@ public class App {
 
     public static void main(String[] args) {
         try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            createTables(connection); // Create tables if they do not exist
+            createTables(connection); 
 
             Scanner scanner = new Scanner(System.in);
 
