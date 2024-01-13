@@ -178,7 +178,7 @@ public class App {
                 System.out.println("Name: " + resultSet.getString("name"));
                 System.out.println("Email: " + resultSet.getString("email"));
                 System.out.println("Phone: " + resultSet.getString("phone"));
-                System.out.println("---------------");
+                System.out.println("--------------------");
             }
         }
     }
